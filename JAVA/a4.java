@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.*;
 
-interface Square {
+interface cube {
     int calculate(int x);
 }
 
@@ -14,9 +14,9 @@ class Test {
         int n = sc.nextInt();
 
         // Lambda expression to define the calculate method
-        Square s = (int x) -> x * x * x;
+        cube s = (int x) -> x * x * x;
 
         int ans = s.calculate(n);
-        System.out.println(ans);
+        System.out.print("\n Cube of " +n+ " is : " +ans);
     }
 }
