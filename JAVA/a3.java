@@ -26,16 +26,16 @@ class Cylinder implements Ope {
 
     public void area() {
         double a = (2 * PI * radius * height) + (2 * PI * radius * radius);
-        System.out.print("Area: " + a);
+        System.out.print("Area : " + a);
     }
 
     public void volume() {
         double v = PI * radius * radius * height;
-        System.out.print("\nVolume: " + v);
+        System.out.print("\nVolume : " + v);
     }
 }
 
-class MK {
+class cyl_ope {
     public static void main(String args[]) {
         Cylinder b = new Cylinder();
         b.acc();
