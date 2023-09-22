@@ -28,7 +28,7 @@ class OfficeStaff extends Staff {
     }
 }
 
-class MK {
+class staff_details {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter the number of office staff: ");
