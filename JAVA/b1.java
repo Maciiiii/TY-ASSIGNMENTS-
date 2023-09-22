@@ -33,11 +33,11 @@ class Sales extends Order {
     Scanner sc = new Scanner(System.in);
 
     public void accept() {
-        System.out.print("\nEnter id: ");
+        System.out.print("\nEnter id : ");
         super.id = sc.nextInt();
-        System.out.print("Enter customer name: ");
+        System.out.print("Enter description : ");
         super.description = sc.next();
-        System.out.print("Enter vendor name: ");
+        System.out.print("Enter vendor name : ");
         vendorName = sc.next();
     }
 
@@ -46,7 +46,7 @@ class Sales extends Order {
     }
 }
 
-class MK {
+class oreders_details {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter the number of purchase and sales orders: ");
@@ -65,14 +65,13 @@ class MK {
             pl[i].display();
 
         System.out.println("\nSales order:");
-        System.out.println("\n");
         for (int i = 0; i < n; i++) {
             s[i] = new Sales();
             s[i].accept();
         }
 
         System.out.println("\nSales order details:");
-        System.out.println("\nid\tcust_name\tvendor_name");
+        System.out.println("\nid\tdescription\tvendor_name");
         for (int i = 0; i < n; i++)
             s[i].display();
     }
