@@ -10,7 +10,7 @@ abstract class Staff {
     Staff(int id, String name) {
         this.id = id;
         this.name = name;
-    }
+    } 
 }
 
 class OfficeStaff extends Staff {
