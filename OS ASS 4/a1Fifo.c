@@ -86,7 +86,7 @@ void main()
 
 
 //OUTPUT::::
-Enter no. of frames: 3
+/*Enter no. of frames: 3
 
  Enter length of referencestring: 16
 
@@ -128,4 +128,4 @@ PageNo    pageframes            pagefault
  8        19   8   15            YES
 -----------------------------------------
  Total No. of page fault : 14
- Total No. of page Hits : 2
+ Total No. of page Hits : 2*/
