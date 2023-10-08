@@ -91,3 +91,50 @@ int main() {
     // printf("\nHit Ratio : %.3f ",hr);
     //printf("\nMis Ratio : %.3f  ",mr);
 }
+//OUTPUT:::
+/*
+
+Enter how many frames: 4
+
+ Enter  length of referencestring: 16
+
+ Enter referencestring:
+12
+15
+12
+18
+6
+8
+11
+12
+19
+12
+6
+8
+12
+15
+19
+8
+
+ Page No.       Frames          Page Fault
+----------------------------
+   12     12   -1   -1   -1      YES
+   15     12   15   -1   -1      YES
+   12     12   15   -1   -1      NO
+   18     12   15   18   -1      YES
+    6     12   15   18   6       YES
+    8     12   8   18   6        YES
+   11     11   8   18   6        YES
+   12     11   8   12   6        YES
+   19     11   8   12   19       YES
+   12     11   8   12   19       NO
+    6     11   6   12   19       YES
+    8     8   6   12   19        YES
+   12     8   6   12   19        NO
+   15     8   6   12   15        YES
+   19     8   19   12   15       YES
+    8     8   19   12   15       NO
+----------------------------
+No. of page fault: 12
+No. of page Hits: 2
+*/
