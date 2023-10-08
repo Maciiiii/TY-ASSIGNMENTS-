@@ -115,7 +115,10 @@ int main()
 
 //OUTPUT:::
 
-/*Enter  length of referencestring: 15
+/*
+Enter how many frames: 4
+
+Enter  length of referencestring: 15
 
  Enter referencestring:
 8
