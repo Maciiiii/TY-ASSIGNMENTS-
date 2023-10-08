@@ -1,5 +1,5 @@
 
-
+// Opt pages replacement algorithm 
 
 #include<stdio.h>
  
@@ -99,3 +99,54 @@ int main()
     
     return 0;
 }
+
+//OUTPUT::::
+
+/*
+
+Enter number of frames: 3
+Enter number of pages: 16
+Enter page reference string:
+12
+15
+12
+18
+6
+8
+11
+12
+19
+12
+6
+8
+12
+15
+19
+8
+
+-------Page Frames--------
+
+Fr1     Fr2     Fr3
+------------------------------------
+12      -1      -1
+12      15      -1
+12      15      -1
+12      15      18
+12      15      6
+12      8       6
+12      11      6
+12      11      6
+12      19      6
+12      19      6
+12      19      6
+12      19      8
+12      19      8
+15      19      8
+15      19      8
+15      19      8
+------------------------------------
+
+Total Page Faults = 9
+
+Total Page Hits = 7
+[Process completed - press Enter]*/
