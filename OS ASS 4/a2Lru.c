@@ -51,7 +51,7 @@ int main() {
         frames[i].counter = -1;
     }
     printf("\n Page No.\tFrames\t\tPage Fault");
-    printf("\n----------------------------");
+    printf("\n-------------------------------------------------");
     currtime = 1;
     for (p = 0; p < np; p++) {
         flag = 0;
@@ -82,7 +82,7 @@ int main() {
         }
 
     }
-    printf("\n----------------------------");
+    printf("\n--------------------------------------------------");
     // hr = ((page_fault)/np);
     // mr = ((cnt)/np);
     printf("\nNo. of page fault: %d ", page_fault);
