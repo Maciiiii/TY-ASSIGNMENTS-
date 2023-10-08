@@ -36,7 +36,7 @@ void main()
 
     printf("\n Page No page  frames pagefault pfct");
 
-    printf("\n---------------------");
+    printf("\n------------------------------------------");
     for (p=0; p<len; p++)
     {
         pno1=ref_str[p];
@@ -66,9 +66,9 @@ void main()
         }
         //  printf("\t%d",pfct);
 
-    }//for
+    }
 
-    printf("\n---------------------");
+    printf("\n-------------------------------------------");
 
     printf("\n Total No. of page fault : %d", pfct);
 
