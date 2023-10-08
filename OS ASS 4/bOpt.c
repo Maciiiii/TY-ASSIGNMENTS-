@@ -24,7 +24,7 @@ int main()
     }
     printf(" \n-------Page Frames--------\n ");
     printf(" \nFr1\tFr2\tFr3\n");
-    
+    printf("\n------------------------------------");
     for(i = 0; i < np; ++i){
         flag1 = flag2 = 0;
         
@@ -92,6 +92,7 @@ int main()
             printf("%d\t", frames[j]);
         }
     }
+    printf("\n------------------------------------");
     int hit=np-faults;
     printf("\n\nTotal Page Faults = %d", faults);
     printf("\n\nTotal Page Hits = %d", hit);
