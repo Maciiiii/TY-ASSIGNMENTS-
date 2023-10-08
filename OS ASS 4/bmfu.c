@@ -26,7 +26,7 @@ int pagefound (int pno1)
             return i;
     return -1;
 
-}//page_found
+}
 
 int free_fr()
 {
@@ -35,7 +35,7 @@ int free_fr()
             return i;
     return -1;
 
-}//page_found
+}
 
 int get_mfu()
 {
@@ -68,7 +68,7 @@ int main()
         frames[i].freq=0;
     }
     printf("\n Page No.\tFrames\t\tPage Fault");
-    printf("\n----------------------------");
+    printf("\n---------------------------------------------------");
     currtime=1;
     for (p=0; p<np; p++)
     {
@@ -103,7 +103,7 @@ int main()
         }
 
     }
-    printf("\n----------------------------");
+    printf("\n-------------------------------------------------");
     // hr = ((page_fault)/np);
     // mr = ((cnt)/np);
     printf("\nNo. of page fault: %d ",page_fault);
