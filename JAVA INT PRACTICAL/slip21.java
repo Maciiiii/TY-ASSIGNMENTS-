@@ -1,45 +1,37 @@
-abstract class Bank
-{
-   abstract void getbalance();
-   
+
+abstract class Bank {
+	abstract int getbalance();
 }
-class Bank1 extends Bank
-{
-    int dep=100;
-  public void getbalance()
-  {
-     System.out.println("The balance in bank1: "+dep);
-     System.out.println("method getbal of Class Bank1");
-  }
+class Bank1 extends Bank {
+	int depoA = 100;
+	int  getbalance() {
+		return depoA;
+	}
 }
-class Bank2 extends Bank
-{
-   int dep=150;
-  public void getbalance()
-  {
-     System.out.println("The balance in bank2: "+dep);
-     System.out.println("method getbal of Class Bank2");
-  }
+class Bank2 extends Bank {
+	int depoB = 150;
+	int getbalance() {
+		return depoB;
+	}
 }
-class Bank3 extends Bank
-{
-    int dep=200;
-  public void getbalance()
-  {
-     System.out.println("The balance in bank3: "+dep);
-     System.out.println("method getbal of Class Bank3");
-  }
+class Bank3 extends Bank {
+	int depoC = 200;
+	int getbalance() {
+		return depoC;
+	}
 }
-class slip21
-{
-  public static void main(String args[])
-  {
-     Bank1 obj1 = new Bank1();
-     Bank2 obj2 = new Bank2();
-     Bank3 obj3 = new Bank3();
-     //All classes can access the method of class A
-     obj1.getbalance();
-     obj2.getbalance();
-     obj3.getbalance();
-  }
+
+class mk {
+	public static void main(String args[]) {
+		Bank1 obj1 = new Bank1();
+		Bank2 obj2 = new Bank2();
+		Bank3 obj3 = new Bank3();
+		//All classes can access the method of class A
+		System.out.print(" \nBalance of A is :  " +  obj1.getbalance());
+		System.out.print(" \nBalance of B is :  " +  obj2.getbalance());
+		System.out.print(" \nBalance of C  is :  " +  obj3.getbalance());
+
+
+
+	}
 }
